@@ -267,7 +267,7 @@ const BridgeDashboard: React.FC = () => {
 
   const processPrediction = async (data: SegmentData): Promise<number> => {
     try {
-      const response = await fetch("https://adams-1ems.onrender.com/predict", {
+      const response = await fetch("https://roadsense.onrender.com/predict", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
